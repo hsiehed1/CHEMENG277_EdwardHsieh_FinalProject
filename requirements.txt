@@ -1,0 +1,23 @@
+# pip install -r requirements.txt
+
+# Note on 'zefram': Notebook 01 uses the `zefram` IZA structure library,
+# which requires Python version ≤ 3.10. The notebook automatically
+# creates an isolated Python 3.10 venv via `uv` and installs zefram there.
+# Install uv with: pip install uv
+
+catboost
+ipywidgets
+jupyterlab
+lightgbm
+matplotlib
+numpy
+optuna
+pandas
+paretoset
+scikit-learn
+scipy
+seaborn
+shap
+torch
+uv
+xgboost
