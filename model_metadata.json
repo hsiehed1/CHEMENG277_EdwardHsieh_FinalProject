@@ -1,0 +1,71 @@
+{
+  "feature_columns": [
+    "accessible_area",
+    "accessible_area_m2pg",
+    "occupiable_area",
+    "occupiable_area_m2pg",
+    "accessible_volume",
+    "accessible_volume_pct",
+    "occupiable_volume_pct",
+    "specific_occupiable_area",
+    "lcd",
+    "pld",
+    "maxdsi",
+    "maxdsd_a",
+    "maxdsd_b",
+    "maxdsd_c",
+    "framework_density",
+    "a",
+    "b",
+    "c",
+    "alpha",
+    "beta",
+    "gamma",
+    "td10",
+    "topological_density",
+    "channel_dim",
+    "atoms",
+    "portals",
+    "cages",
+    "channels",
+    "junctions",
+    "connections",
+    "vol_accessibility_ratio",
+    "area_vol_ratio",
+    "pore_anisotropy",
+    "confinement_ratio",
+    "connections_per_atom",
+    "ab_ratio",
+    "bc_ratio"
+  ],
+  "target_columns": [
+    "CO2_capacity_mmol_g",
+    "CO2_N2_selectivity",
+    "desorption_energy_kJ_mol"
+  ],
+  "best_per_target": {
+    "CO2_capacity_mmol_g": {
+      "model": "RandomForest",
+      "type": "single",
+      "R2": 0.8442954251092959,
+      "RMSE": 0.2730707711958257,
+      "MAE": 0.1748492919068211
+    },
+    "CO2_N2_selectivity": {
+      "model": "GradientBoost",
+      "type": "single",
+      "R2": 0.8646360510956849,
+      "RMSE": 8.04344375409872,
+      "MAE": 5.127407752603406
+    },
+    "desorption_energy_kJ_mol": {
+      "model": "GradientBoost",
+      "type": "single",
+      "R2": 0.7916356755575583,
+      "RMSE": 2.028304424024851,
+      "MAE": 1.308277150193223
+    }
+  },
+  "best_multi_output": "MultiOutput_XGB",
+  "best_multi_avg_r2": 0.8135123096398812
+}
