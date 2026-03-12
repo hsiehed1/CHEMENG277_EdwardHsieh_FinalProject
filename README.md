@@ -111,7 +111,7 @@ Notebook 01 manages this automatically. If it fails, ensure `uv` is installed an
 **`ModuleNotFoundError` for any package**
 Confirm your venv is activated and run `pip install -r requirements.txt` again.
 
-**Optuna tuning is slow**
+**`Optuna tuning is slow`**
 In Notebook 02 Section 3.4, reduce `n_trials=80` to `n_trials=30`.
 
 **`paretoset` not found**
